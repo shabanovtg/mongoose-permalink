@@ -24,7 +24,6 @@ var Operation = keymirror({
 	CONCAT: null
 });
 
-exports.Operation = Operation;
 function isBlank(value) {
 	return !value || /^\s*$/.test(value);
 }
@@ -136,3 +135,5 @@ function permalinkPlugin(schema, options) {
 		});
 	});
 }
+
+module.exports = permalinkPlugin;
